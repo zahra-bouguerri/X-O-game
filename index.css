@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    background: #131916;
+    display: grid;
+    place-items: center;
+    color: aliceblue;
+}
+.container{
+height: auto;
+width: auto;
+background: linear-gradient( #53196ad4 30%, #762b73);
+border-radius: 20px;
+padding: 30px;
+box-shadow: inset 2px 2px 4px rgba(15, 7, 78, 0.18), inset -2px -3px 3px rgba(190, 156, 189, 0.65);
+}
+.start{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    
+    
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.txt h3{
+    padding: 15px;
+   border-top: solid 2px rgba(169, 20, 183, 0.5);
+   border-bottom: 2px solid rgba(169, 20, 183, 0.5) ;
+}
+.pic img{
+    display: flex;
+    justify-content:flex-end;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 90px;
+    border: solid 2px rgba(169, 20, 183, 0.5);
+    width: 29vh;
+    height: 40vh;
+}
+.container h2,.winner h2{
+    display: flex;
+    justify-content: center;
+}
+.button button{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: aliceblue;
+    padding: 16Px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    background:rgba(212, 99, 222, 0.676);
+    cursor: pointer;
+}
+.button button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;   
+}
+.game{
+    height: 500px;
+    width: 550px;
+    display: grid;
+    display: none;
+}
+.timer{
+    width: 112px;
+    display:flex;
+   
+   
+}
+.timer button{
+    border-radius: 20px;
+    border:#762b73 3px solid;
+}
+.timer p{
+    
+     width:160px;
+     height: 30px;
+     border:5px double ;
+     padding-top: 4px;
+     padding-left: 4px;
+     padding-right: 4px;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 20px;
+}
+.title{
+    margin: auto;
+    margin-top: 20px;
+    height: 60px;
+    width: 350px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.26), -2px -2px 5px rgb(0 0 0 / 87%);
+    position: relative;
+}
+.title button{
+    width: 172px;
+    height: 60px;
+    border-radius: 50px;
+    background: transparent;
+    border: none;
+    font-size: 23px;
+    color: aliceblue;
+    position: absolute;
+    z-index:3;
+}
+#y{
+    left:172px;
+    z-index: 4;
+} 
+#choose{
+    width: 177px;
+    height: 60px;
+    position: absolute;
+    border-radius: 50px;
+    background: #a817c1;
+}
+.gameBoxes{
+    margin-top: 20px;
+    width:400Px;
+    display: grid;
+    grid-template-columns: 90px 90Px 90px;
+    grid-gap: 30px;
+    margin-left: 120px;
+}
+.boxes{
+    width: 90px;
+    height: 90Px;
+    box-shadow: 2px 2px 5px rgb(169 20 183 / 26%), -2px -2px 5px rgb(0 0 0 / 86%);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.winner .button{
+    display: flex;
+    justify-content: center;
+}
+.winner{
+ display: none;
+}
+

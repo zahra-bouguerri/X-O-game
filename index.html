@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" contient="projet">
+        <title>X/O</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    </head>
+
+<body>
+    <body>
+        <!--start page-->
+        <div class="container">
+            <div class="start" id="start">
+                <div class="txt">
+                    <h3>Welcome to Tic Tac Toe !</h3>
+                    <div class="button" id="btn"> 
+                        <button  onclick="changePageToChoose()">Start</button>
+                    </div>
+                
+                </div>
+                <div class="pic">
+                    <img src="1.png" width="140px">
+                </div>
+            </div>
+            
+            <!--xo game-->
+            <div class="game" id="game">
+                <div class="timer" id="timer">
+                    <p>Timer <span id="m"> 0</span><span>:</span><span id="s">0</span></p>
+                </div>
+                <div class="title" id="title">
+                    <button>Player X</button>
+                    <button id="y">Player Y</button>
+                    <div  id="choose"></div>
+                </div>
+                <div class="gameBoxes">
+                    <div class="boxes" id="num1" onclick="gamef(this.id)"></div>
+                    <div class="boxes" id="num2" onclick="gamef(this.id)"></div>
+                    <div class="boxes" id="num3" onclick="gamef(this.id)"></div>
+                    <div class="boxes" id="num4" onclick="gamef(this.id)"></div>
+                    <div class="boxes" id="num5" onclick="gamef(this.id)"></div>
+                    <div class="boxes" id="num6" onclick="gamef(this.id)"></div>
+                    <div class="boxes" id="num7" onclick="gamef(this.id)"></div>
+                    <div class="boxes" id="num8" onclick="gamef(this.id)"></div>
+                    <div class="boxes" id="num9" onclick="gamef(this.id)"></div>
+                    
+                </div>
+            </div>
+            <div class="winner" id="winner">
+                <h2 id="name">Player X win this game</h2>
+                <br>
+                <hr>
+                <br>
+                <div class="button">
+                    <button id="quit">Play Again</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+            
+    </body>
+</html>
